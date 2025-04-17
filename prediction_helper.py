@@ -4,11 +4,12 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
 # Path to the saved model and its components
-MODEL_PATH = os.path.join("C:/", "Users", "Gaurav", "PycharmProjects", "Credit_Risk_Modelling_ML", "artifacts", "model_data.joblib")
+MODEL_PATH = 'artifacts/model_data.joblib'
+#MODEL_PATH = os.path.join("C:/", "Users", "Gaurav", "PycharmProjects", "Credit_Risk_Modelling_ML", "artifacts", "model_data.joblib")
 #MODEL_PATH = 'C:/Users/Gaurav/PycharmProjects/Credit_Risk_Modelling_ML/artifacts/model_data.joblib'
 
 # Load the model and its components
-model_data = joblib.load("C:/Users/Gaurav/PycharmProjects/Credit_Risk_Modelling_ML/artifacts/model_data.joblib")
+model_data = joblib.load(MODEL_PATH)
 model = model_data['model']
 scaler = model_data['scaler']
 features = model_data['features']
