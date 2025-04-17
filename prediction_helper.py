@@ -8,7 +8,7 @@ MODEL_PATH = os.path.join("C:/", "Users", "Gaurav", "PycharmProjects", "Credit_R
 #MODEL_PATH = 'C:/Users/Gaurav/PycharmProjects/Credit_Risk_Modelling_ML/artifacts/model_data.joblib'
 
 # Load the model and its components
-model_data = joblib.load(MODEL_PATH)
+model_data = joblib.load("C:/Users/Gaurav/PycharmProjects/Credit_Risk_Modelling_ML/artifacts/model_data.joblib")
 model = model_data['model']
 scaler = model_data['scaler']
 features = model_data['features']
